@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://Resources/Shaders/water.shader" type="Shader" id=1]
+[ext_resource path="res://Resources/Textures/water.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Textures/water_uv.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Textures/water_normal.png" type="Texture" id=4]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/amp = Vector2( 0.1, 0.1 )
+shader_param/freq = Vector2( 3, 5 )
+shader_param/_time = Vector2( 2, 5 )
+shader_param/texScale = Vector2( 8, 4 )
+shader_param/uvScale = Vector2( 0.2, 0.2 )
+shader_param/uvTimeScale = 0.05
+shader_param/uvAmp = 0.2
+shader_param/refraction = 0.05
+shader_param/texmap = ExtResource( 2 )
+shader_param/texnormal = ExtResource( 4 )
+shader_param/texuv = ExtResource( 3 )
